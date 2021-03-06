@@ -55,7 +55,27 @@ public class Main {
             System.out.println(sumMin);
         }
 
+        for (int[] a : arr)
+        {
+            System.out.println(Arrays.toString(a));
+        }
 
+        System.out.println(min);
+        System.out.println(max);
+
+        for(int i=0; i<arr.length;i++){
+            int t = arr [i][min];
+            arr [i][min] = arr [i][max];
+            arr [i][max] = t;
+        }
+
+
+
+
+        for (int[] a : arr)
+        {
+            System.out.println(Arrays.toString(a));
+        }
 
 
 
